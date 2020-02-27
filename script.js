@@ -19,10 +19,10 @@ function writePassword() {
   passwordchar.numeric = passwordchar.numeric.split("");
   passwordchar.specialchar = passwordchar.specialchar.split("");
 
-  var promptlower = prompt ("Type any lowercase letter");
-  var promptupper = prompt ("Type any upper case letter");
-  var promptnumeric = prompt ("Type a single number");
-  var promptspecialchar = prompt ("Type a special character");
+  var promptlower = prompt ("Select a lowercase letter")
+  var promptupper = prompt ("Select an uppercase letter")
+  var promptnumeric = prompt ("Select a numeric value between 0 and 9")
+  var promptspecialchar = prompt ("Select")
 
   for (var i = 0; i < passwordchar.lowercase.length; i++) {
    for (var j = 0; j < passwordchar.uppercase.length; j++) {
@@ -34,8 +34,9 @@ function writePassword() {
         (promptnumeric === passwordchar.numeric[i]) ||
         (promptspecialchar === passwordchar.specialchar[i])){
             
-            //return password (stuck here..NEED HELP!!!)
-    
+            return;
+            //return password?? not sure (stuck here..NEED HELP!!!)
+            // well, I just need help in general
         }
 
        } 
