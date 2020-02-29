@@ -7,14 +7,14 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   //below are my additions//
-  var passwordlength = prompt ("How many characters will you input in your password? Enter a number between 8 and 128");
+  var passwordlength = prompt("How many characters will you input in your password? Enter a number between 8 and 128");
   var passwordchar = {
       lowercase: "abcdefghijklmnopqrstuvwxyz",
       uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       numeric: "0123456789",
       specialchar: " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~ "
   }
-  passwordchar.lowercase = passwordchar.lowercase.split("");
+  passwordchar.lowercase = passwordchar.lowercase.split("");  
   passwordchar.uppercase = passwordchar.uppercase.split("");
   passwordchar.numeric = passwordchar.numeric.split("");
   passwordchar.specialchar = passwordchar.specialchar.split("");
@@ -22,27 +22,34 @@ function writePassword() {
   var promptlower = prompt ("Select a lowercase letter")
   var promptupper = prompt ("Select an uppercase letter")
   var promptnumeric = prompt ("Select a numeric value between 0 and 9")
-  var promptspecialchar = prompt ("Select")
+  var promptspecialchar = prompt ("Select a special character")
 
-  for (var i = 0; i < passwordchar.lowercase.length; i++) {
-   for (var j = 0; j < passwordchar.uppercase.length; j++) {
-    for (var k = 0; k < passwordchar.numeric.length; k++)    {
-     for (var l = 0; l < passwordchar.specialchar.length; l++) {
+  //for (var i = 0; i < passwordchar.lowercase.length; i++) 
+    //if (promptlower === passwordchar.lowercase[i])
+    //result = 
+  
+  //for (var j = 0; j < passwordchar.uppercase.length; j++) 
+    //if (promptupper === passwordchar.uppercase[i])
+    //result = 
 
-        if ((promptlower === passwordchar.lowercase[i]) ||
-        (promptupper === passwordchar.uppercase[i]) ||
-        (promptnumeric === passwordchar.numeric[i]) ||
-        (promptspecialchar === passwordchar.specialchar[i])){
+  
+    //for (var k = 0; k < passwordchar.numeric.length; k++) 
+      //if (promptnumeric === passwordchar.numeric[i])
+      //result = 
+
+    
+     //for (var l = 0; l < passwordchar.specialchar.length; l++) 
+      //if (promptspecialchar === passwordchar.specialchar[i])
+      //result = 
+    
+     
+    
+      //}
             
             return;
             //return password?? not sure (stuck here..NEED HELP!!!)
             // well, I just need help in general
-        }
-
-       } 
-      }
-    }
-   } 
+      
       
   
 
