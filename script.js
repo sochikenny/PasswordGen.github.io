@@ -28,36 +28,31 @@ function generatePassword() {
        result += lc
     }
 
-    else if (promptupper) {
+    if (promptupper) {
       var uc = passwordchar.uppercase[Math.floor(Math.random()* passwordchar.uppercase.length)];
       result += uc
     }
 
-    else if (promptnumeric) {
+    if (promptnumeric) {
       var num = passwordchar.numeric[Math.floor(Math.random()* passwordchar.numeric.length)];
       result += num
     }
 
-    else if (promptspecialchar === passwordchar.specialchar[i]){
+    if (promptspecialchar){
       var sc = passwordchar.specialchar[Math.floor(Math.random()* passwordchar.specialchar.length)];
       result += sc
     }
+    
+
   }
+
       return result
-
-
-
-
-
 }
 
 
 
-
-  //for (var j = 0; j < result.length; j+=4)
-  
-
-
+//The function above works but i might be missing some things 
+//I still dont have much of a clue what to do with this writePassword function because the above fucntion is already doing the job
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
