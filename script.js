@@ -50,20 +50,11 @@ function generatePassword() {
 }
 
 
-
-//The function above works but i might be missing some things 
-//I still dont have much of a clue what to do with this writePassword function because the above fucntion is already doing the job
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.innerText = password;
 
-  
-  
-
-  
-
-  //below are instructors addtions
   passwordText.value = password;
 
 }
