@@ -1,3 +1,5 @@
+## Password Generator
+
 This is a password generator.
 Once the user clicks on generate password, it provides gives the user four prompts.
 These prompts include the length of characters, a choice of uppercase and lowercase alphabets, numerical values, and special characters
